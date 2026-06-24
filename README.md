@@ -93,28 +93,7 @@ from U.S. Census **LODES** origin–destination data.
 
 ## Data & Credits
 
-- Demand: U.S. Census **LODES** (2022)
+- Demand: U.S. Census **LODES** (2022), special thanks to [rslurry](https://github.com/rslurry) for the demand script
 - Buildings: **Overture** / **OpenStreetMap**
 - Tiles: **© OpenMapTiles © OpenStreetMap contributors** (CC-BY)
 - Map by **NerdieSanders**
-
----
-
-<details>
-<summary>Computing the demand stats locally</summary>
-
-Run against the uncompressed `demand_data.json` (in your demand-repo output):
-
-```python
-import json
-d = json.load(open("demand_data.json"))
-pops = d["pops"]
-print("Demand Points:", len(d["points"]))
-print("Populations:  ", len(pops))
-print("Total Modeled Demand:", sum(p["size"] for p in pops))
-```
-
-Per-category Special Demand totals (Airports/Universities/Entertainment/
-Military) are computed and displayed automatically by Railyard from the
-published manifest.
-</details>
