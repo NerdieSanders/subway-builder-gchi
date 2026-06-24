@@ -20,9 +20,6 @@ from U.S. Census **LODES** origin–destination data.
 
 ## Population Summary
 
-> Railyard renders these live on the map page. To fill them in here, run the
-> snippet at the bottom of this file against your `demand_data.json`.
-
 - **Total Modeled Demand:** _<fill>_
 - **Modeled Normal Demand:** _<fill>_
 - **Modeled Special Demand:** _<fill>_
