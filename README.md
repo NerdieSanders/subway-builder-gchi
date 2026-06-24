@@ -94,13 +94,6 @@ from U.S. Census **LODES** origin–destination data.
 ### Military Bases
 - Naval Station Great Lakes
 
-## Additional Features
-
-- **Building Collision** — a buildings index is included, providing in-game
-  collision geometry for all non-filtered buildings.
-- **Neighborhood Labels** — municipal and neighborhood labels derived from
-  administrative boundary data.
-
 ## Data & Credits
 
 - Demand: U.S. Census **LODES** (2022)
