@@ -1,0 +1,16 @@
+# editor / tooling cruft
+.Rhistory
+
+# loose source images — the published gallery lives in gallery/
+*.png
+screenshot1_GCHI.webp
+screenshot2_extent_GCHI.webp
+
+# large build artifacts are NOT in this repo (they live in ~/cgl-depot and
+# ship as a GitHub Release asset, not in the source tree)
+*.pmtiles
+*.osm.pbf
+demand_data.json
+buildings_index.json
+*.gz
+*.zip
