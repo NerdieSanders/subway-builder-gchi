@@ -1,0 +1,95 @@
+{
+    "city": "Chicagoland",
+    "states": ["il", "in"],
+    "year": 2022,
+
+    "bbox": {
+        "type": "box",
+        "bounds": [-88.3768, 41.3778, -87.2205, 42.4949]
+    },
+
+    "cbd_bbox": [-87.6450, 41.8700, -87.6150, 41.8950],
+
+    "HUMAN_READABLE": true,
+    "MAX_WORKERS": 4,
+
+    "MAXPOPSIZE": 200,
+    "CALCULATE_ROUTES": true,
+    "ROUTING_METHOD": "osrm",
+
+    "SMALL_THRESHOLD": 100,
+    "DISTANCE_THRESHOLD_NONCBD": 0.1,
+    "DISTANCE_THRESHOLD_CBD": 0.05,
+    "MAX_POP_THRESHOLD": [200, 500, 5000, 15000, Infinity],
+    "BUFFER_METERS": [250, 200, 150, 125, 100],
+    "DEMAND_FACTOR": 1,
+
+    "airport": ["ORD", "MDW"],
+    "airport_daily_passengers": [202000, 58000],
+    "airport_loc": [[-87.9073, 41.9742], [-87.7522, 41.7868]],
+
+    "universities": ["UChicago", "UIC", "Northwestern", "DePaul", "Loyola", "IIT", "PurdueNW", "IUNorthwest", "CollegeOfLakeCounty", "LakeForestCollege"],
+    "univ_loc": [
+        [-87.5997, 41.7897],
+        [-87.6505, 41.8708],
+        [-87.6753, 42.0565],
+        [-87.6553, 41.9237],
+        [-87.6580, 42.0001],
+        [-87.6270, 41.8349],
+        [-87.4760, 41.5836],
+        [-87.3399, 41.5687],
+        [-88.0290, 42.3640],
+        [-87.8590, 42.2480]
+    ],
+    "students": [18566, 33906, 23000, 21210, 17384, 8834, 9051, 3500, 14000, 1600],
+    "perc_oncampus": [0.45, 0.12, 0.50, 0.15, 0.25, 0.40, 0.08, 0.05, 0.02, 0.75],
+
+    "entertainment": ["SoldierField", "Wrigley", "RateField", "UnitedCenter", "WintrustArena", "AllstateArena", "NOWArena", "SeatGeekStadium", "CreditUnion1Arena", "McCormickPlace", "StephensConventionCtr", "ArtInstitute", "FieldMuseum", "MuseumScienceIndustry", "SheddAquarium", "AdlerPlanetarium", "MCAChicago", "ChicagoHistoryMuseum", "LincolnParkZoo", "BrookfieldZoo", "ChicagoBotanicGarden", "MortonArboretum", "CantignyPark", "NavyPier", "SixFlagsGreatAmerica", "MillenniumPark", "MagnificentMile", "WoodfieldMall", "OakbrookCenter", "GurneeMills", "OldOrchard", "FashionOutletsChicago", "SouthlakeMall", "RiversCasino", "HorseshoeHammond", "HardRockNWI", "AmeristarEastChicago", "NorthAvenueBeach", "IllinoisBeachSP"],
+    "ent_loc": [
+        [-87.6167, 41.8623],
+        [-87.6553, 41.9484],
+        [-87.6338, 41.8299],
+        [-87.6742, 41.8807],
+        [-87.6270, 41.8513],
+        [-87.8861, 42.0055],
+        [-88.0335, 42.0556],
+        [-87.8060, 41.7656],
+        [-87.6494, 41.8696],
+        [-87.6166, 41.8516],
+        [-87.8615, 41.9870],
+        [-87.6238, 41.8796],
+        [-87.6170, 41.8663],
+        [-87.5830, 41.7906],
+        [-87.6140, 41.8676],
+        [-87.6073, 41.8663],
+        [-87.6232, 41.8967],
+        [-87.6310, 41.9114],
+        [-87.6336, 41.9217],
+        [-87.8336, 41.8336],
+        [-87.7896, 42.1469],
+        [-88.0707, 41.8156],
+        [-88.1567, 41.8470],
+        [-87.6051, 41.8917],
+        [-87.9362, 42.3700],
+        [-87.6226, 41.8826],
+        [-87.6240, 41.8955],
+        [-88.0353, 42.0492],
+        [-87.9520, 41.8505],
+        [-87.9530, 42.3725],
+        [-87.7330, 42.0670],
+        [-87.8640, 41.9930],
+        [-87.3340, 41.4790],
+        [-87.8870, 42.0090],
+        [-87.5070, 41.6970],
+        [-87.4080, 41.5575],
+        [-87.4490, 41.6470],
+        [-87.6280, 41.9110],
+        [-87.8070, 42.4180]
+    ],
+    "ent_size": [62000, 38000, 18000, 20000, 10000, 16000, 9000, 12000, 8000, 25000, 10000, 3600, 5500, 4000, 5500, 1500, 1000, 800, 9000, 5500, 2700, 3000, 800, 25000, 23000, 20000, 30000, 30000, 15000, 20000, 8000, 7000, 8000, 12000, 11500, 8000, 6000, 10000, 3000],
+
+    "bases": ["NSGreatLakes"],
+    "base_loc": [[-87.8406, 42.3103]],
+    "personnel": [25000],
+    "perc_onbase": [0.70]
+}
