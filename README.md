@@ -20,14 +20,9 @@ from U.S. Census **LODES** origin–destination data.
 
 ## Population Summary
 
-- **Total Modeled Demand:** _<fill>_
-- **Modeled Normal Demand:** _<fill>_
-- **Modeled Special Demand:** _<fill>_
-
-## Map Statistics
-
-- **Demand Points:** _<fill>_
-- **Populations:** _<fill>_
+- **Total Modeled Demand:** 4,338,851
+- **Demand Points:** 16,205
+- **Pops:** 313,080
 
 ## Special Demand
 
