@@ -20,9 +20,6 @@ from U.S. Census **LODES** origin–destination data.
 
 ## Population Summary
 
-> Railyard renders these live on the map page. To fill them in here, run the
-> snippet at the bottom of this file against your `demand_data.json`.
-
 - **Total Modeled Demand:** _<fill>_
 - **Modeled Normal Demand:** _<fill>_
 - **Modeled Special Demand:** _<fill>_
@@ -94,37 +91,9 @@ from U.S. Census **LODES** origin–destination data.
 ### Military Bases
 - Naval Station Great Lakes
 
-## Additional Features
-
-- **Building Collision** — a buildings index is included, providing in-game
-  collision geometry for all non-filtered buildings.
-- **Neighborhood Labels** — municipal and neighborhood labels derived from
-  administrative boundary data.
-
 ## Data & Credits
 
-- Demand: U.S. Census **LODES** (2022)
+- Demand: U.S. Census **LODES** (2023)
 - Buildings: **Overture** / **OpenStreetMap**
 - Tiles: **© OpenMapTiles © OpenStreetMap contributors** (CC-BY)
 - Map by **NerdieSanders**
-
----
-
-<details>
-<summary>Computing the demand stats locally</summary>
-
-Run against the uncompressed `demand_data.json` (in your demand-repo output):
-
-```python
-import json
-d = json.load(open("demand_data.json"))
-pops = d["pops"]
-print("Demand Points:", len(d["points"]))
-print("Populations:  ", len(pops))
-print("Total Modeled Demand:", sum(p["size"] for p in pops))
-```
-
-Per-category Special Demand totals (Airports/Universities/Entertainment/
-Military) are computed and displayed automatically by Railyard from the
-published manifest.
-</details>
