@@ -1,0 +1,9 @@
+{
+    "id": "greater-chicagoland",
+    "name": "Greater Chicagoland",
+    "city_code": "GCHI",
+    "version": "v1.0.1",
+    "dependencies": {
+        "subway-builder": ">=1.4.0"
+    }
+}

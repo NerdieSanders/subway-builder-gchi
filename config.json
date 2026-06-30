@@ -1,12 +1,12 @@
 {
     "name": "Greater Chicagoland",
     "code": "GCHI",
-    "description": "Now includes Cook, Dupage, Will, Lake (IL), Lake (IN) counties, and the Fox River Valley communities.",
+    "description": "Includes Cook, Dupage, Will, Lake (IL), Lake (IN) counties, and the Fox River Valley communities.",
     "population": 7950000,
     "country": "US",
     "thumbnailBbox": [-88.3768, 41.3778, -87.2205, 42.4949],
     "creator": "NerdieSanders",
-    "version": "v1.0.0",
+    "version": "v1.0.1",
     "initialViewState": {
         "latitude": 41.93635,
         "longitude": -87.79865,
