@@ -16,3 +16,8 @@ buildings_index.json
 *.zip
 runbook_CHI.md
 runbook_mapmaking.md
+
+# local working files / other maps (keep out of the GCHI repo)
+DEMAND_POINTS.csv
+BUILD_TIMELINE.md
+springfield-spi/
