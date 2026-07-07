@@ -1,36 +1,39 @@
 # Greater Chicagoland (GCHI)
 
-A Subway Builder map covering the Chicago metropolitan area from the Wisconsin
+A Subway Builder map covering the Chicago metropolitan area — from the Wisconsin
 state line down through Will County, west to the Fox River Valley, and east
-across the Indiana line into the Calumet region — **Cook, DuPage, Will, Lake
+across the Indiana line into the Calumet region: **Cook, DuPage, Will, Lake
 County (IL), and Lake County (IN)**, plus the Fox River Valley communities.
 
-Built with [`depot`](https://github.com/Subway-Builder-Modded/depot); demand
-from U.S. Census **LODES** origin–destination data.
+Built with [`depot`](https://github.com/Subway-Builder-Modded/depot); demand from
+U.S. Census **LODES 2023** origin–destination data. **Requires Subway Builder 1.4.0+.**
 
 ---
 
 ## Coverage
 
 - **Bounding box:** `-88.3768, 41.3778, -87.2205, 42.4949`
-- **Playable Area:** _auto-computed by Railyard on publish_
 - **Counties:** Cook, DuPage, Will, Lake (IL), Lake (IN)
 - **Notable communities:** Chicago, Evanston, Aurora, Elgin, Joliet, Naperville,
   Waukegan, Gary, Hammond, Crown Point
 
-## Population Summary
+> Playable area and demand stats (points, populations, totals) are **auto-derived
+> by the registry** from the map package and shown on the map's Railyard page —
+> they are not hand-listed here.
 
-> Railyard renders these live on the map page. To fill them in here, run the
-> snippet at the bottom of this file against your `demand_data.json`.
+## Features
 
-- **Total Modeled Demand:** _<fill>_
-- **Modeled Normal Demand:** _<fill>_
-- **Modeled Special Demand:** _<fill>_
-
-## Map Statistics
-
-- **Demand Points:** _<fill>_
-- **Populations:** _<fill>_
+- **Consolidated routed demand (~75k pops)** — LODES 2023 origin–destination
+  demand routed via OSRM, then aggressively consolidated for smooth in-game
+  performance while preserving total ridership.
+- **Building collision with foundation depth** — per-building foundation depths
+  (10–80 m), so deep tunnels interact with building foundations realistically.
+- **Buildable train stations** — real Metra / CTA 'L' / Amtrak / South Shore
+  station buildings are excluded from collision, so you can place stations there.
+- **Free water building** — no collision restriction in Lake Michigan or the
+  rivers; bridge or tunnel across freely.
+- **Neighborhood labels** — municipal and neighborhood labels from administrative
+  boundary data.
 
 ## Special Demand
 
@@ -90,41 +93,15 @@ from U.S. Census **LODES** origin–destination data.
 - Ameristar Casino East Chicago
 - North Avenue Beach
 - Illinois Beach State Park
+- Obama Presidential Center
 
 ### Military Bases
 - Naval Station Great Lakes
 
-## Additional Features
-
-- **Building Collision** — a buildings index is included, providing in-game
-  collision geometry for all non-filtered buildings.
-- **Neighborhood Labels** — municipal and neighborhood labels derived from
-  administrative boundary data.
-
 ## Data & Credits
 
-- Demand: U.S. Census **LODES** (2022)
+- Demand: U.S. Census **LODES 2023** (routed via OSRM)
 - Buildings: **Overture** / **OpenStreetMap**
 - Tiles: **© OpenMapTiles © OpenStreetMap contributors** (CC-BY)
+- Built with **depot 1.1.1**
 - Map by **NerdieSanders**
-
----
-
-<details>
-<summary>Computing the demand stats locally</summary>
-
-Run against the uncompressed `demand_data.json` (in your demand-repo output):
-
-```python
-import json
-d = json.load(open("demand_data.json"))
-pops = d["pops"]
-print("Demand Points:", len(d["points"]))
-print("Populations:  ", len(pops))
-print("Total Modeled Demand:", sum(p["size"] for p in pops))
-```
-
-Per-category Special Demand totals (Airports/Universities/Entertainment/
-Military) are computed and displayed automatically by Railyard from the
-published manifest.
-</details>

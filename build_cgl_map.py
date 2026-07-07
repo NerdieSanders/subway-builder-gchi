@@ -40,6 +40,10 @@ mg = MapGen(
     # building_tile_filter_size=None,     # defaults to index filter size
     # max_building_tile_size=450,         # KB/tile cap for buildings
 
+    # v1.1.0 (depot 1.1.x) collision layers:
+    create_building_foundations=True,     # per-building foundation depth (10-80 m) — better tunnel collision
+    create_ocean_foundations=False,       # OFF: free building in/under water (Lake Michigan + rivers). Skips GEBCO/bathymetry.
+
     ncores=None,   # use all cores
     RAM=12,        # GB for mapshaper (WSL has ~13 GB available); lower if less
     verb=True,
