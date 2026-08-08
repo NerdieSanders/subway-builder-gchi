@@ -6,7 +6,7 @@ across the Indiana line into the Calumet region: **Cook, DuPage, Will, Lake
 County (IL), and Lake County (IN)**, plus the Fox River Valley communities.
 
 Built with [`depot`](https://github.com/Subway-Builder-Modded/depot); demand from
-U.S. Census **LODES 2023** origin–destination data. **Requires Subway Builder 1.4.0+.**
+U.S. Census **LODES 2023** origin–destination data. **Requires Subway Builder 1.4.5+.**
 
 ---
 
@@ -34,6 +34,8 @@ U.S. Census **LODES 2023** origin–destination data. **Requires Subway Builder 
   rivers; bridge or tunnel across freely.
 - **Neighborhood labels** — municipal and neighborhood labels from administrative
   boundary data.
+- **College campuses on the map** — campus polygons render in game, so the 44
+  institutions driving education demand are visible where you're routing to them.
 
 ## Special Demand
 
@@ -41,17 +43,24 @@ U.S. Census **LODES 2023** origin–destination data. **Requires Subway Builder 
 - O'Hare International Airport (ORD)
 - Midway International Airport (MDW)
 
-### Universities
-- University of Chicago
-- University of Illinois Chicago (UIC)
-- Northwestern University
-- DePaul University
-- Loyola University Chicago
-- Illinois Institute of Technology
-- Purdue University Northwest
-- Indiana University Northwest
-- College of Lake County
-- Lake Forest College
+### Universities & Colleges
+
+**44 institutions, ~370,000 students** — the region's full higher-education
+footprint, not just the flagship campuses. Community colleges are included
+because they generate substantial commuter demand across the suburbs.
+
+*Major universities* — University of Illinois Chicago · Northwestern · DePaul ·
+University of Chicago · Loyola Chicago · Illinois Institute of Technology ·
+Purdue University Northwest · Indiana University Northwest · Northeastern
+Illinois · Roosevelt · Chicago State · Governors State · Lewis · Aurora ·
+Concordia Chicago · Saint Xavier · Elmhurst · Dominican · Benedictine ·
+North Park · Wheaton · North Central · Lake Forest
+
+*Community colleges* — College of DuPage · Joliet Junior · College of Lake
+County · Harper · Moraine Valley · Triton · Elgin · Oakton · Waubonsee ·
+McHenry County · Morton · South Suburban · Prairie State · Ivy Tech East
+Chicago · and the seven City Colleges of Chicago (Harold Washington, Wilbur
+Wright, Malcolm X, Truman, Daley, Kennedy-King, Olive-Harvey)
 
 ### Entertainment & Attractions
 - Soldier Field
@@ -103,5 +112,5 @@ U.S. Census **LODES 2023** origin–destination data. **Requires Subway Builder 
 - Demand: U.S. Census **LODES 2023** (routed via OSRM)
 - Buildings: **Overture** / **OpenStreetMap**
 - Tiles: **© OpenMapTiles © OpenStreetMap contributors** (CC-BY)
-- Built with **depot 1.1.1**
+- Built with **depot 1.2.7**
 - Map by **NerdieSanders**
