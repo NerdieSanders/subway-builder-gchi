@@ -2,6 +2,7 @@
 .Rhistory
 
 # loose source images — the published gallery lives in gallery/
+# (originals are kept locally in _source-images/)
 *.png
 screenshot1_GCHI.webp
 screenshot2_extent_GCHI.webp
@@ -14,10 +15,8 @@ demand_data.json
 buildings_index.json
 *.gz
 *.zip
-runbook_CHI.md
-runbook_mapmaking.md
 
-# local working files / other maps (keep out of the GCHI repo)
+# local working files (keep out of the published repo)
+runbook_CHI.md
 DEMAND_POINTS.csv
 BUILD_TIMELINE.md
-springfield-spi/
